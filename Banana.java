@@ -24,19 +24,17 @@ public class Banana extends Actor
     }
     //reset banana to right of screen, randomize if at bottom, middle, or top
     public void resetBanana(){
-    int num = Greenfoot.getRandomNumber(4);
-     if(num == 0){
+        int num = Greenfoot.getRandomNumber(4);
+        if(num == 0){
                 setLocation(600, 100);
-            } else if (num == 1) {
-                setLocation(600, 150);
-            } else if (num == 2) {
-                setLocation(600, 200);
-            } else if (num == 3) {
-                setLocation(600, 250);
-            }
-    else{
-        setLocation(600, 500);
-        
+        } else if (num == 1) {
+            setLocation(600, 200);
+        } else if (num == 2) {
+            setLocation(600, 300);
+        } else if (num == 3) {
+            setLocation(600, 400);
+        }else{
+            setLocation(600, 500);
         }
     }
 }

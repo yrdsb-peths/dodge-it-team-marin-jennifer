@@ -22,11 +22,11 @@ public class Hero extends Actor
             return;
         }
         if(Greenfoot.isKeyDown("up") && !atTop()){
-            setLocation(100,getY()-200);
+            setLocation(100,getY()-100);
             moveCooldown = 10;
         }
         if(Greenfoot.isKeyDown("down") && !atBottom()){
-            setLocation(100,getY()+200);
+            setLocation(100,getY()+100);
             moveCooldown = 10;
         }
     }
