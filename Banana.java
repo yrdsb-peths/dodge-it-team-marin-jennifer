@@ -5,7 +5,8 @@ public class Banana extends Actor
     public Banana() {
         setImage("images/bananas.png");
     }
-    
+    //always moving to left
+    //if touching hero, add bomb to show game over
     public void act()
     {
         move(-10);
@@ -17,18 +18,19 @@ public class Banana extends Actor
         if(isTouching(Hero.class)){
             //add a game over symbol
             Bomb bomb = new Bomb();
-            getWorld().addObject(bomb, 300, 200);
+            getWorld().addObject(bomb, 300, 300);
             getWorld().removeObject(this);
         }
     }
-    
+    //reset banana to right of screen, randomize if at bottom, middle, or top
     public void resetBanana(){
-        int num = Greenfoot.getRandomNumber(2);
+        int num = Greenfoot.getRandomNumber(3);
         if(num == 0){
             setLocation(600, 100);
-        }
-        else{
+        } else if(num == 1){
             setLocation(600, 300);
+        } else {
+            setLocation(600, 500);
         }
     }
 }
