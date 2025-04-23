@@ -8,6 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Hero extends Actor
 {
+    public Hero() {
+        setImage("images/tux.png");  
+    }
+    
     boolean atTop = true;
     
     public void act()
