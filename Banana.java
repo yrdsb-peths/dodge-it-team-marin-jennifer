@@ -19,6 +19,8 @@ public class Banana extends Actor
             Bomb bomb = new Bomb();
             getWorld().addObject(bomb, 300, 200);
             getWorld().removeObject(this);
+            
+            GreenfootImage image = new GreenfootImage("YourImagesName.type");
         }
     }
     
