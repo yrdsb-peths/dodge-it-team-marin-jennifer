@@ -17,7 +17,6 @@ public class Medium extends Actor
     public void act()
     {
         if(Greenfoot.mouseClicked(this)){
-            difficulty = 1;
             Greenfoot.setWorld(new MyWorld());
         }
     }

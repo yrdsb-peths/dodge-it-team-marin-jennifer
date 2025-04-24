@@ -9,7 +9,7 @@ public class Banana extends Actor
     //if touching hero, add bomb to show game over
     public void act()
     {
-        if(Easy.getDifficulty() >= 1){
+         if(Greenfoot.mouseClicked(medium) || Greenfoot.mouseClicked(hard)){
             move(-20);
         }else{
             move(-10);

@@ -17,7 +17,6 @@ public class Hard extends Actor
     public void act()
     {
         if(Greenfoot.mouseClicked(this)){
-            difficulty = 2;
             Greenfoot.setWorld(new MyWorld());
         }
     }
