@@ -16,11 +16,12 @@ public class Banana extends Actor
         
         if(isTouching(Hero.class)){
             //add a game over symbol
+            Haha haha = new Haha();
+            getWorld().addObject(haha,300,200);
             Bomb bomb = new Bomb();
             getWorld().addObject(bomb, 300, 200);
             getWorld().removeObject(this);
             
-            GreenfootImage image = new GreenfootImage("YourImagesName.type");
         }
     }
     
