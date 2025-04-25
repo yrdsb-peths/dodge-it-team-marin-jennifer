@@ -13,17 +13,17 @@ public class Menu extends World
      * Constructor for objects of class menu.
      * 
      */
-    public int difficulty;
+    public static int difficulty;
+    Easy easy = new Easy();
+    Medium medium = new  Medium();
+    Hard hard = new Hard();
     public Menu()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 600, 1); 
         
         showText("CHOOSE YOUR LEVEL",300,200);
-        // Create buttons
-        Easy easy = new Easy();
-        Medium medium = new  Medium();
-        Hard hard = new Hard();
+        
 
         // Add buttons to the world
         addObject(easy, 300, 300);
@@ -44,5 +44,8 @@ public class Menu extends World
             difficulty = 2;
             Greenfoot.setWorld(new MyWorld());
         }
+    }
+    public static int getDifficulty(){
+        return difficulty;
     }
 }

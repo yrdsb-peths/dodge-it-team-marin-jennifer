@@ -9,12 +9,12 @@ public class Banana extends Actor
     //if touching hero, add bomb to show game over
     public void act()
     {
-         if(Greenfoot.mouseClicked(medium) || Greenfoot.mouseClicked(hard)){
+         if(Menu.getDifficulty()>0){
             move(-20);
         }else{
             move(-10);
         }
-        if(getX() <= 0) {
+        if(getX() <= 0){
             resetBanana();
         }
         
@@ -29,7 +29,7 @@ public class Banana extends Actor
     public void resetBanana(){
         int num = Greenfoot.getRandomNumber(4);
         if(num == 0){
-                setLocation(600, 100);
+            setLocation(600, 100);
         } else if (num == 1) {
             setLocation(600, 200);
         } else if (num == 2) {
