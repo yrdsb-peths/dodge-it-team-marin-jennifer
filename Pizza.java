@@ -9,7 +9,11 @@ public class Pizza extends Actor
     //if touching hero, add bomb to show game over
     public void act()
     {
-        move(-20);
+        if(Menu.getDifficulty()>1){
+            move(-20);
+        }else{
+            move(-10);
+        }
         
         if(getX() <= 0) {
             resetPizza();
