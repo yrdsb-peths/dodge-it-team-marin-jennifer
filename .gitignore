@@ -2,3 +2,5 @@
 **.ctxt
 project.greenfoot
 **/greenfoot.jar
+git rm .DS_Store
+git commit
