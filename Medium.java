@@ -12,6 +12,9 @@ public class Medium extends Actor
      * Act - do whatever the Medium wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Medium() {
+        setImage("images/smiley4.png");
+    }
     public static int difficulty;
 
     public void act()
