@@ -18,7 +18,11 @@ public class Pizza extends Actor
         if(isTouching(Hero.class)){
             //add a game over symbol
             Skull skull = new Skull();
+            Skull skull2 = new Skull();
+            Skull skull3 = new Skull();
             getWorld().addObject(skull, 300, 300);
+            getWorld().addObject(skull2, 200, 300);
+            getWorld().addObject(skull3, 400, 300);
             getWorld().removeObject(this);
         }
     }
