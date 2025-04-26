@@ -13,6 +13,11 @@ public class Medium extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public static int difficulty;
+    
+    public Medium()
+    {
+        setImage("images/smiley4.png");
+    }
 
     public void act()
     {

@@ -13,6 +13,11 @@ public class Hard extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public static int difficulty;
+    
+    public Hard()
+    {
+        setImage("images/smiley3.png");
+    }
 
     public void act()
     {
