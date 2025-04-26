@@ -9,7 +9,7 @@ public class Banana extends Actor
     //if touching hero, add bomb to show game over
     public void act()
     {
-         if(Menu.getDifficulty()>1){
+         if(Menu.getDifficulty()>0){
             move(-20);
         }else{
             move(-10);
@@ -25,7 +25,6 @@ public class Banana extends Actor
             Bomb bomb = new Bomb();
             getWorld().addObject(bomb, 300, 300);
             getWorld().removeObject(this);
-            Greenfoot.stop();
         }
     }
     //reset banana to right of screen, randomize if at bottom, middle, or top
