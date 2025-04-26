@@ -12,6 +12,9 @@ public class Hard extends Actor
      * Act - do whatever the Hard wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Hard() {
+        setImage("images/smiley3.png");
+    }
     public static int difficulty;
     
     public Hard()
