@@ -16,11 +16,6 @@ public class Hard extends Actor
         setImage("images/smiley3.png");
     }
     public static int difficulty;
-    
-    public Hard()
-    {
-        setImage("images/smiley3.png");
-    }
 
     public void act()
     {

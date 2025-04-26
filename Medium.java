@@ -16,11 +16,6 @@ public class Medium extends Actor
         setImage("images/smiley4.png");
     }
     public static int difficulty;
-    
-    public Medium()
-    {
-        setImage("images/smiley4.png");
-    }
 
     public void act()
     {
